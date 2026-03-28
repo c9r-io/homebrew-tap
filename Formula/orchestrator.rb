@@ -11,18 +11,18 @@ class Orchestrator < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/c9r-io/orchestrator/releases/download/v0.2.3/orchestrator-v0.2.3-aarch64-apple-darwin.tar.gz"
-      sha256 "63c8dfad86865cec4aa14f59405223f9db441874f307da58757b36d5119d41aa"
+      sha256 "e0cfb9a91d4ad1584c4f0d48a292f13e6cbe5d002b41ae9bfcf1467f822172bf"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/c9r-io/orchestrator/releases/download/v0.2.3/orchestrator-v0.2.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7386a616aa404547d3e1148f4329362d5d79a18b8f4026647b00f9af3f0fc490"
+      sha256 "1d968d83c75ace20827bd2f1fefa7fc375d210ea3be5ad10e4598b847ab222ee"
     end
     if Hardware::CPU.arm?
       url "https://github.com/c9r-io/orchestrator/releases/download/v0.2.3/orchestrator-v0.2.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9012112461ed92149c2bfccf35bc0143975487c1e3d3fb90fea79271de089a85"
+      sha256 "cffb3001fa36a382bfc90ad2f550b8b86390e8bf5ca524c2ec2c820eb43b4295"
     end
   end
 
