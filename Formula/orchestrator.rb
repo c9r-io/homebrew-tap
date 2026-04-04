@@ -5,24 +5,24 @@
 class Orchestrator < Formula
   desc "AI-native SDLC automation — agent orchestrator CLI and daemon"
   homepage "https://github.com/c9r-io/orchestrator"
-  version "0.2.8"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/c9r-io/orchestrator/releases/download/v0.2.8/orchestrator-v0.2.8-aarch64-apple-darwin.tar.gz"
-      sha256 "eefdeea79ebb7e44728e68e4c923c8b3cb4cc4667a3eeda79406dd44fe1ed7fa"
+      url "https://github.com/c9r-io/orchestrator/releases/download/v0.3.0/orchestrator-v0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "bfc32712048f14ad229327b0038ee5f0d9bd6053b34185e9a78beeee3e7488a9"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/c9r-io/orchestrator/releases/download/v0.2.8/orchestrator-v0.2.8-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "84b5eab12a0f5c12cd2f04722f7dae63f3fb39a204b945af2bd83a2145f3f85a"
+      url "https://github.com/c9r-io/orchestrator/releases/download/v0.3.0/orchestrator-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "188246cfba723169f57cf4f78dfe3cdec70e18603c60e6ad2faa177b6ceedba3"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/c9r-io/orchestrator/releases/download/v0.2.8/orchestrator-v0.2.8-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8cee10072de93a8e7b1e26bf2ead7629179c11ef9e7c43ad5abe9ac57a947df5"
+      url "https://github.com/c9r-io/orchestrator/releases/download/v0.3.0/orchestrator-v0.3.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cf1fc6f4fd2f448d4acb6a559dfd45273a2f99bffc108450b0045371e616e46b"
     end
   end
 
